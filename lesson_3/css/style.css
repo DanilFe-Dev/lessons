@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+/* Селектори по пріорітету від найнижчого до найвищого */
+
+* {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+.title {
+    color: blue;
+}
+
+[class*="it"] {
+    color: blueviolet;
+}
+
+#navigation {
+    color: goldenrod;
+}
+
+/* Комбінації селекторів по пріорітету від найнижчого до найвищого*/
+
+.title,
+li,
+p {
+    color: green;
+}
+
+li.item {
+    color: blue;
+}
+
+.item.first {
+    color: aqua;
+}
+
+/* Каскадність (вкладеність) селекторів по пріорітету, від найнижчого до найвищого */
+
+.first~li {
+    color: brown;
+}
+
+.list li {
+    color: white;
+}
+
+.list>li {
+    color: black;
+}
+
+.first+li {
+    color: orange;
+}
+
+.list .item {
+    color: red;
+}
+
+.list * {
+    color: blue;
+}
