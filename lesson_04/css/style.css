@@ -1,0 +1,94 @@
+/* Підключення файлів обнулення стилів */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+/* Підключення шрифту Poppins. варіації 400 і 500  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500&display=swap");
+
+/* Підключення шрифту Comfortaa варіації 400 і 500 */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:regular,500&display=swap");
+
+/* Підключення шрифту Montserrat варіації 400 і 800 */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,800&display=swap");
+
+
+/* Відпрацювання пройденого на занятті матеріалу */
+body {
+   font-family: Montserrat, sans-serif;
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+header,
+footer {
+   font-family: Comfortaa, sans-serif;
+   font-weight: 500;
+   font-size: 25px;
+}
+
+header>a {
+   color: darkblue;
+   font-style: oblique;
+   text-decoration: underline;
+   text-decoration-color: aquamarine;
+   text-decoration-style: double;
+   text-decoration-thickness: 3px;
+   text-underline-offset: 3px;
+}
+
+main>div>p {
+   color: rgba(8, 34, 150, 0.671);
+   text-align: justify;
+   letter-spacing: 2px;
+   word-spacing: 5px;
+}
+
+main h1,
+h2,
+h3 {
+   text-align: center;
+   text-transform: capitalize;
+   letter-spacing: 1px;
+   word-spacing: 5px;
+}
+
+ul li {
+   text-shadow: 4px 4px 10px rgba(20, 141, 16, 0.671);
+   text-shadow: 2px 2px 3px rgb(255, 251, 0);
+   color: blue;
+   text-transform: uppercase;
+}
+
+/* Який жах цей горизонтальной скролл xD */
+main>div>h2#embroideries+p {
+   white-space: nowrap;
+   letter-spacing: -2px;
+}
+
+/* Стилізація макету */
+
+/* Згоден, звернення далеко не найкраще, але щоб перебити стилі від експериментів
+довелось на це піти -_- */
+.article#layout>* {
+   font-family: Poppins, sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+   color: #808080;
+   text-transform: none;
+   letter-spacing: normal;
+   word-spacing: normal;
+   text-align: left;
+
+   /* У звичайній ситуації таке не пишемо, бо це значення за замовчуванням, 
+   але в даному випадку вимагає ситуація, потрібно перебити стилі задані раніше */
+   font-weight: 400;
+}
+
+.article#layout>h2 {
+   font-size: 20px;
+   font-weight: 500;
+   color: #1A1A1A;
+}
