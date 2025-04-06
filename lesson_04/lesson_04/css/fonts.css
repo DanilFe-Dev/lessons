@@ -1,0 +1,50 @@
+/* Підключення шрифту Poppins, варіації 400 і 500 */
+@font-face {
+   font-family: "Poppins";
+   src: url("..//fonts/poppins/Poppins-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Poppins";
+   src: url("..//fonts/poppins/Poppins-Medium.woff2") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Підключення шрифту Comfortaa варіації 400 і 500 */
+@font-face {
+   font-family: "Comfortaa";
+   src: url("..//fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Comfortaa";
+   src: url("..//fonts/comfortaa/Comfortaa-Medium.woff2") format("woff2");
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* Підключення шрифту Montserrat варіації 400 і 800 */
+@font-face {
+   font-family: "Montserrat";
+   src: url("..//fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("..//fonts/montserrat/Montserrat-ExtraBold.woff2") format("woff2");
+   font-weight: 800;
+   font-style: normal;
+   font-display: swap;
+}
