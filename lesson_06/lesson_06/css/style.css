@@ -1,0 +1,319 @@
+/* Підключення файлів обнулення стилів */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+/* Універсальна стилізація */
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+/* Практика вивчених властивостей */
+
+.homework .container,
+.header,
+.footer {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.homework {
+   margin-bottom: 50px;
+}
+
+/* .block {
+   border: 2px solid;
+   border: red dashed 5px;
+   border-top: 10px dotted forestgreen;
+   border-bottom-width: 1px;
+} */
+
+/* .inline {
+   border: 5px solid;
+} */
+
+/* .inline-block {
+   border-top: 10px dotted forestgreen;
+   border-bottom-width: 1px;
+} */
+
+/* .block {
+   outline: 5px solid;
+} */
+
+/* .inline {
+   outline: 5px dotted green;
+} */
+
+/* .inline-block {
+   outline-offset: -150px;
+   outline: 50px solid red;
+   outline-style: dotted;
+} */
+
+/* .block {
+   border: 5px yellowgreen solid;
+   border-radius: 25px;
+} */
+
+/* .inline {
+   border: 5px red solid;
+   border-radius: 25px;
+} */
+
+/* .inline-block {
+   border-radius: 30px;
+   border-top-left-radius: 0px;
+   border-radius: 125px 50px;
+   border-radius: 19.96% 11.99%;
+   height: 100%;
+   display: block;
+} */
+
+/* .inline-block-1 {
+   height: 100%;
+   border-radius: 19.96% 11.99%;
+   border-radius: 19.96% 7.98% 19.96% 7.98% / 29.97% 11.99% 29.97% 11.99%;
+} */
+
+/* .arrow-line {
+   background-color: green;
+   display: inline-block;
+   width: 200px;
+   height: 40px;
+   margin-bottom: 28px;
+} */
+
+/* .arrow-top {
+   width: 0;
+   height: 0;
+   border-top: 50px solid transparent;
+   border-left: 100px solid green;
+   border-bottom: 50px solid transparent;
+   display: inline-block;
+   margin-left: -5px;
+} */
+
+/* .inline-block {
+   box-shadow: 10px 10px 20px yellow, 20px 20px 30px blue, -20px 20px 30px blue;
+   opacity: 0;
+   visibility: hidden;
+} */
+
+/* .block {
+   opacity: 30%;
+   opacity: 0.3;
+} */
+
+/* .block {
+   background-color: aqua;
+   background-image: url("../img/mark.png");
+   min-height: 1000px;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-attachment: fixed;
+   background-size: 25px 50px;
+   background-size: cover;
+   border: 20px dotted black;
+   background-clip: content-box;
+   padding: 50px;
+} */
+
+/* 
+.block {
+   background: url("../img/mark.png") no-repeat 2px 2px / 25px,
+      radial-gradient(circle, rgba(42, 123, 155, 1) 0%, rgba(59, 16, 43, 1) 13%, rgba(101, 59, 152, 1) 26%, rgba(66, 163, 143, 1) 37%, rgba(199, 87, 178, 0.41) 69%, rgba(255, 229, 0, 1) 100%);
+   padding-left: 30px;
+} */
+
+
+/* Стилізація макету Ecobazar */
+
+/* Не дуже зрозумів тему з "відступами безпеки" - в уроці Женя показував, що задає їх
+блоку (класу) одразу з ценутруванням, але в макеті якщо так зроблю - вплине на ширину блоку, буде не за макетом.
+я вірно зробив, що розділив? чи потрібно закладати відступи у максимальну ширину блоку?*/
+.ecobazar {
+   padding: 0 15px 0 15px;
+   margin-bottom: 50px;
+}
+
+/* Така стилізація, враховуючи, що робимо лише частину блоку, при повній верстці блоку
+стилізація, максимальна ширина тощо були б інші */
+.container__ecobazar {
+   max-width: 648px;
+
+   /* Відступ 50 пікселів не по макету - для зручності */
+   margin: 0 auto;
+}
+
+.paragraphs,
+.advantages {
+   font-family: "Poppins", sans-serif;
+   line-height: 1.50;
+   color: #808080;
+}
+
+/* Щоб не робити відступи для всіх параграфів, а потім не відміняти у другого і третього, 
+тимчасове рішення */
+.paragraph.first {
+   margin-bottom: 20px;
+}
+
+
+.advantages,
+.paragraphs {
+   margin-bottom: 20px;
+}
+
+.advantage {
+   margin-bottom: 14px;
+}
+
+/* Прибираємо відступ, щоб не робити зовнішній відступ від дочірнього елементу до наступного блоку */
+.paragraphs.last,
+.advantage.last {
+   margin-bottom: 0px;
+}
+
+.advantage {
+   min-height: 20px;
+   padding-left: 28px;
+   background: url("../img/green-check.png") no-repeat 0 1px / 20px;
+   line-height: 1.40;
+}
+
+
+
+
+/* Стилізація макету Hydra - 1 частина */
+/* Стилізував не точь-в-точь по піксельних відступам, а більше щоб була
+більш-менш універсальна конструкція, універсальні стилі тощо */
+
+.hydra {
+   padding-left: 15px;
+   padding-right: 15px;
+   background-color: #302C42;
+
+   /* Паддінг виключно для більш органічного вигляду */
+   padding-top: 90px;
+   padding-bottom: 90px;
+   font-size: 0px;
+}
+
+.hydra-contacts {
+   max-width: 1272px;
+   margin: 0 auto;
+   margin-bottom: 90px;
+}
+
+.contacts {
+   /* По технічним параметрам градієнт той же - візуально ні, не розумію чому.
+   як не крутив не виходило зробити такий же - цей варіант вийшов найближчий */
+   background: url("../img/stick.svg") no-repeat 33% center / 1px 117px,
+      /* можна було зробити і блоком, але це довелось 
+      би вставляти елемент в пункти списку, тому тут вирішив через експорт вектору */
+      url("../img/stick.svg") no-repeat 66% center / 1px 117px,
+      radial-gradient(circle, rgba(58, 52, 86, 0.95) 0%, rgba(33, 30, 46, 1) 100%);
+   font-size: 0px;
+   border-radius: 90px;
+}
+
+.contact {
+   font-family: "Montserrat", sans-serif;
+   font-size: 14px;
+   color: white;
+   display: inline-block;
+   width: 33%;
+   padding: 54px 0 58px 100px;
+}
+
+.contact__title {
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.contact.geo {
+   background-image: url("../img/geo.png");
+}
+
+.contact.phone {
+   background-image: url("../img/phone-call.png");
+}
+
+.contact.mail {
+   background-image: url("../img/mail.png");
+}
+
+.contact.geo,
+.contact.mail,
+.contact.phone {
+   background-position: 30px center;
+   background-repeat: no-repeat;
+}
+
+/* Стилізація макету Hydra - 2 частина */
+.hydra-about__container {
+   max-width: 1272px;
+   margin: 0 auto;
+
+   background: url("/img/vector-7.png") no-repeat -100px 20px / 1449px 257px,
+      url("/img/vector-8.png") no-repeat -100px 304px / 1445px 212px;
+}
+
+.hydra-2__image {
+   max-width: 524px;
+   border-radius: 45.80% 19.08% / 43.08% 17.95%;
+   overflow: clip;
+   display: inline-block;
+   margin-right: 118px;
+}
+
+.hydra-2__description {
+   display: inline-block;
+
+   padding-top: 50px;
+   max-width: 630px;
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   color: #FFF;
+   vertical-align: top;
+}
+
+.hydra-2__button {
+   font-family: "Montserrat", sans-serif;
+   font-size: 12px;
+   font-weight: 700;
+   color: #343045;
+   text-transform: uppercase;
+   background: linear-gradient(90deg, rgba(129, 118, 175, 0.95) 0%, rgba(192, 183, 232, 1) 100%);
+   padding: 17px 47px 16px 39px;
+   border-radius: 40px;
+}
+
+.hydra-2__tittle.strong {
+   font-size: 36px;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.hydra-2__tittle {
+   color: rgba(255, 255, 255, 0.95);
+   font-size: 36px;
+   font-weight: 300;
+   margin-bottom: 42px;
+   line-height: 1.2;
+}
+
+.hydra-2__paragraphs {
+   margin-bottom: 28px;
+
+   /* Підбирав для точності вигляду як у макеті методом підбору */
+   line-height: 1.7;
+
+   /* Фігма в дев і в дизайн моді видає, що це Regular, але візуально він тонший */
+}
