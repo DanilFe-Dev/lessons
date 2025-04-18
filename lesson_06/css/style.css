@@ -21,7 +21,7 @@
    padding-right: 15px;
 }
 
-.homework .container {
+.homework {
    margin-bottom: 50px;
 }
 
@@ -190,22 +190,24 @@
 
 
 /* Стилізація макету Hydra - 1 частина */
-/* Стилізував не тоочь-в-точь по піксельних відступам, а більше щоб була
+/* Стилізував не точь-в-точь по піксельних відступам, а більше щоб була
 більш-менш універсальна конструкція, універсальні стилі тощо */
 
-.hydra-1 {
+.hydra {
    padding-left: 15px;
    padding-right: 15px;
    background-color: #302C42;
-}
-
-.hydra-1__container {
-   max-width: 1272px;
-   margin: 0 auto;
-   margin-bottom: 90px;
 
    /* Паддінг виключно для більш органічного вигляду */
    padding-top: 90px;
+   padding-bottom: 90px;
+   font-size: 0px;
+}
+
+.hydra-contacts {
+   max-width: 1272px;
+   margin: 0 auto;
+   margin-bottom: 90px;
 }
 
 .contacts {
@@ -255,16 +257,12 @@
 }
 
 /* Стилізація макету Hydra - 2 частина */
-.hydra-2__container {
+.hydra-about__container {
    max-width: 1272px;
    margin: 0 auto;
 
    background: url("/img/vector-7.png") no-repeat -100px 20px / 1449px 257px,
       url("/img/vector-8.png") no-repeat -100px 304px / 1445px 212px;
-
-   /* Паддінг виключно для більш органічного вигляду */
-   padding-bottom: 90px;
-   font-size: 0px;
 }
 
 .hydra-2__image {
@@ -292,23 +290,23 @@
    font-weight: 700;
    color: #343045;
    text-transform: uppercase;
-   display: inline-block;
    background: linear-gradient(90deg, rgba(129, 118, 175, 0.95) 0%, rgba(192, 183, 232, 1) 100%);
    padding: 17px 47px 16px 39px;
    border-radius: 40px;
 }
 
-.hydra-2__tittle {
+.hydra-2__tittle.strong {
    font-size: 36px;
    font-weight: 700;
    margin-bottom: 10px;
 }
 
-.hydra-2__subtitle {
+.hydra-2__tittle {
    color: rgba(255, 255, 255, 0.95);
    font-size: 36px;
    font-weight: 300;
    margin-bottom: 42px;
+   line-height: 1.2;
 }
 
 .hydra-2__paragraphs {
