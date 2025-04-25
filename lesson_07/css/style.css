@@ -1,0 +1,229 @@
+/* Підключення файлів обнулення стилів */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+/* Універсальна стилізація */
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+.header,
+.footer {
+   padding-left: 15px;
+   padding-right: 15px;
+   text-align: center;
+   font-size: 35px;
+   font-weight: 700;
+}
+
+
+/* Тренування псевдокласів і псевдоелементів */
+/* a {
+   display: block;
+}
+
+.hover:hover {
+   text-decoration: underline 5px;
+}
+
+.active:active {
+   color: red;
+}
+
+.visited {
+   border: 2px solid green;
+}
+
+.visited:visited {
+   color: green;
+   border-color: blueviolet;
+}
+
+.focus {
+   text-transform: capitalize;
+   text-decoration: overline;
+}
+
+.focus:focus {
+   color: blue;
+   outline: 2px solid rgba(255, 255, 30, 0.856);
+}
+
+.target:target {
+   text-transform: uppercase;
+} */
+
+/* .block::before {
+   content: "(";
+} */
+
+/* .block::after {
+   content: ")";
+} */
+
+/* .test:last-child {
+   color: red;
+} */
+
+/* .test:not(:first-child) {
+   color: yellow;
+} */
+
+/* .block span:first-of-type {
+   color: red;
+} */
+
+/* .block :not(:nth-child(3)) {
+   color: rebeccapurple;
+} */
+
+/* .block p:nth-of-type(1n + 2) {
+   color: red;
+} */
+
+/* .block:has(p) span {
+   color: red;
+} */
+
+/* .block :not(:first-of-type) {
+   color: red;
+} */
+
+/* .block :nth-child(even) {
+   color: greenyellow;
+} */
+
+/* .block :nth-child(odd) {
+   color: blue;
+} */
+
+/* Стилізація макету */
+.business__team__container {
+   padding-left: 15px;
+   padding-right: 15px;
+   background-color: #412672;
+}
+
+.business__team {
+   max-width: 1201px;
+   margin: 0 auto;
+   padding: 61px 0 102px 0;
+   font-size: 0px;
+}
+
+
+.business__title {
+   font-family: "Inter", sans-serif;
+   font-size: 38px;
+   color: white;
+   margin-bottom: 31px;
+}
+
+
+.team__bold {
+   font-weight: 700;
+}
+
+/* Стилізація карток */
+.team__cards>:not(:last-child) {
+   margin-right: 20px;
+}
+
+.team__card {
+   font-family: "Inter", sans-serif;
+   display: inline-block;
+   max-width: 387px;
+   background-color: white;
+   padding: 20px;
+   font-size: 15px;
+   line-height: 1.35714286;
+   color: #4F4F4F;
+   vertical-align: top;
+}
+
+.team__card :not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.team__card:hover {
+   background-color: #FFBE48;
+
+   /* Знаю, заборонений прийом :) але на уроці багато разів використовували,
+   і виглядає з ним значно краще :) */
+   transition: all 0.3s;
+}
+
+.business__photo {
+   max-width: 367px;
+}
+
+.team__card__title {
+   color: #000;
+   font-weight: 600;
+   /* Загально для тексту ми задавали більший line hеight, тому тут маємо 
+   прописати "базове" значення яка при звичайних умовах не пишемо :) */
+   line-height: normal;
+   font-size: 22px;
+}
+
+.business__link {
+   color: #FE3F3F;
+}
+
+.business__link:hover {
+   text-decoration: underline;
+   font-weight: 700;
+   margin-left: -1px;
+}
+
+.business__features__container {
+   background-color: white;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.business__features {
+   font-family: "Inter", sans-serif;
+   max-width: 518px;
+   margin: 0 auto;
+   color: #412672;
+   font-size: 22px;
+   padding: 153px 0 137px 0;
+}
+
+.features__title {
+   font-size: 34px;
+   line-height: 1.20588235;
+}
+
+.features__bold {
+   font-weight: 700;
+}
+
+.business__features>:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.features__list>:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.features__paragraph {
+   line-height: 1.22727273;
+}
+
+.features__item::before {
+   content: url("..//img/check-box.png");
+   vertical-align: middle;
+   margin-right: 15px;
+   margin-left: -44px;
+}
+
+.features__item {
+   font-size: 20px;
+   color: #4F4F4F;
+   padding-left: 44px;
+}
