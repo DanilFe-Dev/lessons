@@ -93,7 +93,7 @@
    vertical-align: baseline;
    width: 30px;
    height: 30px;
-   background: url("/img/content/firefly_logo.webp") no-repeat 0 0 / 30px 30px,
+   background: url("img/content/firefly_logo.webp") no-repeat 0 0 / 30px 30px,
       white;
    margin-right: 20px;
 }
