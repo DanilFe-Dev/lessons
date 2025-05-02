@@ -1,0 +1,106 @@
+/* Підключення файлів обнулення стилів */
+@import url('reset.css');
+
+/* Підключення файлу шрифтів */
+@import url('fonts.css');
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+.header {
+   padding: 7px 15px 15px 15px;
+   background-color: #cbb39c;
+   font-size: 0px;
+}
+
+
+.header__container {
+   max-width: 70%;
+   margin: 0 auto;
+}
+
+.header__social {
+   background-color: white;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 50px;
+   height: 50px;
+   margin-bottom: -15px;
+}
+
+.header__social__construct {
+   display: inline-block;
+   width: 33.3333%;
+}
+
+.header__social__construct.discord {
+   padding-left: 30%;
+}
+
+.header__social:hover {
+   width: 60px;
+   height: 60px;
+   margin: -15px 0px -20px -5px;
+}
+
+.header__title {
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 34px;
+   text-align: center;
+   color: #5e5b5c;
+}
+
+
+.page {
+   padding: 20px;
+   background:
+      url("../img/background/Ellie.png") no-repeat 60% 100% / 240px 358px,
+      url("../img/background/Joel.png") no-repeat 90% 100% / 266px 374px,
+      url("../img/background/bcg1.jpg") no-repeat center center / cover;
+   min-height: 825px;
+}
+
+.lessons__list__item {
+   padding-left: 50px;
+}
+
+.lessons__list__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.lessons__list__item>a {
+   font-family: "Dirty Ego", fantasy;
+   font-size: 50px;
+   color: white;
+   letter-spacing: 5px;
+   word-spacing: 15px;
+   font-style: italic;
+   padding: 5px 15px;
+   background-color: #626554a9;
+   border-radius: 30px;
+}
+
+.lessons__list__item>a:hover {
+   font-size: 55px;
+   margin: -5px 0 0 -5px;
+   transition: all 0.3s;
+}
+
+.lessons__list__item::before {
+   content: "";
+   vertical-align: baseline;
+   width: 30px;
+   height: 30px;
+   background: url("/img/content/firefly_logo.webp") no-repeat 0 0 / 30px 30px,
+      white;
+   margin-right: 20px;
+}
+
+
+.footer {
+   padding: 3px 15px;
+   background-color: #cbb39c;
+   text-align: center;
+}
