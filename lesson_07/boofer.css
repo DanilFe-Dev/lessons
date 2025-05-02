@@ -1,0 +1,53 @@
+.team__cards>:not(:last-child) {
+   margin-right: 20px;
+}
+
+.team__card {
+   font-family: "Inter", sans-serif;
+   display: inline-block;
+   max-width: 387px;
+   background-color: white;
+   padding: 20px;
+   font-size: 15px;
+   line-height: 1.35714286;
+   color: #4F4F4F;
+   vertical-align: top;
+}
+
+.team__card :not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.team__card:hover {
+   background-color: #FFBE48;
+   border: 3px solid black;
+
+   /* Знаю, заборонений прийом :) але на уроці багато разів використовували,
+   і виглядає з ним значно краще :) */
+   transition: all 0.3s;
+}
+
+.business__photo {
+   max-width: 367px;
+   max-height: 266px;
+   width: 100%;
+}
+
+.team__card__title {
+   color: #000;
+   font-weight: 600;
+   /* Загально для тексту ми задавали більший line hеight, тому тут маємо 
+   прописати "базове" значення яка при звичайних умовах не пишемо :) */
+   line-height: normal;
+   font-size: 22px;
+}
+
+.business__link {
+   color: #FE3F3F;
+}
+
+.business__link:hover {
+   text-decoration: underline;
+   font-weight: 700;
+   margin-left: -1px;
+}
